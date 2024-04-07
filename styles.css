@@ -9,7 +9,7 @@ body {
   font-size: 10px;
 }
 
-.calculator {
+#calculator {
   display: grid;
   row-gap: 2ch;
   width: 40vw;
@@ -26,11 +26,9 @@ body {
   height: 10vh;
   text-align: right;
   font-size: 5.5em;
-  resize: none;
-  overflow: hidden;
 }
 
-.numpad {
+#numpad {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 2ch;
@@ -40,7 +38,7 @@ body {
   border-radius: 10px;
 }
 
-.numpad > button {
+#numpad > button {
   background-color: #eae3db;
   color: #3b4664;
   text-align: center;
@@ -52,17 +50,17 @@ body {
   height: 10vh;
 }
 
-.numpad > button:nth-child(4) {
+#numpad > button:nth-child(4) {
   /* grid-column: 1 / span 2; */
   background-color: #3b4664;
   color: #ffffff;
 }
-.numpad > button:nth-child(17) {
+#numpad > button:nth-child(17) {
   grid-column: 1 / span 2;
   background-color: #3b4664;
   color: #ffffff;
 }
-.numpad > button:nth-child(18) {
+#numpad > button:nth-child(18) {
   grid-column: 3 / span 2;
   background-color: #d13f30;
   color: #ffffff;
