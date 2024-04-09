@@ -16,7 +16,12 @@
   <body>
     <div id="calculator">
       <div>
-        <input type="text" id="input-area" value="" />
+        <input
+          type="text"
+          id="input-area"
+          value=""
+          onkeypress="return validations(event)"
+        />
       </div>
       <div id="numpad">
         <button>7</button>
