@@ -33,32 +33,6 @@ const append = operator => {
     input_value.value += operator;
 };
 
-// document.addEventListener("keyup", e => {
-//   if (e.key == "-" && input_value.value == "") {
-//     console.log("working");
-//     return (input_value.value = e.target.value.replace(/[^0-9\-]/g, ""));
-//   }
-
-//   return (input_value.value = e.target.value.replace(/[^0-9+\-*./]/g, ""));
-// });
-
-// document.addEventListener("keydown", e => {
-//   input_value.focus();
-//   console.log(e);
-//   if (e.key == "Enter") calc();
-
-//   if (
-//     [46, 8, 9, 27, 13].indexOf(e.key) !== -1 ||
-//     (e.key === 65 && e.ctrlKey === true) ||
-//     (e.key >= 48 && e.key <= 57)
-//   ) {
-//     return;
-//   } else {
-//     e.preventDefault();
-//     return false;
-//   }
-// });
-
 buttons.forEach(button => {
   button.addEventListener("click", e => {
     if (input_value.value == "" && e.target.textContent == "-")
