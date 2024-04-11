@@ -16,12 +16,7 @@
   <body>
     <div id="calculator">
       <div>
-        <input
-          type="text"
-          id="input-area"
-          value=""
-          onkeypress="return validations(event)"
-        />
+        <input type="text" id="input-area" value="" onkeydown="" />
       </div>
       <div id="numpad">
         <button>7</button>
@@ -31,15 +26,15 @@
         <button>4</button>
         <button>5</button>
         <button>6</button>
-        <button>+</button>
+        <button onclick="append('+')">+</button>
         <button>1</button>
         <button>2</button>
         <button>3</button>
-        <button>-</button>
-        <button>.</button>
+        <button onclick="append('-')">-</button>
+        <button onclick="append('.')">.</button>
         <button>0</button>
-        <button>/</button>
-        <button>x</button>
+        <button onclick="append('/')">/</button>
+        <button onclick="append('x')">x</button>
         <button>RESET</button>
         <button>=</button>
       </div>
